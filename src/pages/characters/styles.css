@@ -1,0 +1,123 @@
+.display-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    background-color: #259042;
+}
+
+.product-list {
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #259042;
+
+}
+
+.product-list * {
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+}
+
+.product-list article {
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    min-height: 175px;
+    margin-bottom: 20px!important;
+    position: relative;
+    margin: 0 1%;
+    text-align: center;
+}
+
+.product-list article h2{
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 767px) {
+    .product-list article {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .product-list article {
+        width: 31%;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .product-list article {
+        width: 18%;
+    }
+}
+
+.product-list article p{ 
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 20px!important;
+    height: 50px;
+}
+
+.product-list article a {
+    height: 42px;
+    border-radius: 25px;
+    border: 2px solid #259042;
+    background: none;
+    margin-top: 25px!important;
+    color: #259042;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+.product-list article a:hover {
+    transition: all .2s;
+    background-color: #259042;
+    color: #FFF;
+}
+
+.product-list .actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px!important;
+}
+
+.product-list .actions button{
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid white;
+    background-color: #259042;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.product-list .actions button[disabled] {
+    opacity: .5;
+    cursor: no-drop;
+}
+
+.product-list .actions button[disabled]:hover {
+    cursor: no-drop;
+    border: 1px solid white;
+    background-color: #259042;
+    color: white;
+}
+
+.product-list .actions button:hover {
+    background-color: white;
+    color: #259042;
+}
+
