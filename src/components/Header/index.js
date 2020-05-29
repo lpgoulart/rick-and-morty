@@ -11,7 +11,7 @@ export default class Header extends Component {
                         <ul>
                             <li><a href="/">HOME</a></li>
                             <li><a href="/characters">CHARACTERS</a></li>
-                            {/* <li><a href="/characters">HOME</a></li> */}
+                            <li><a href="/characters">EPISODES</a></li>
                         </ul>
                     </nav>
                 </div>
